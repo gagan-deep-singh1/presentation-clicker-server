@@ -1,0 +1,15 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+script:
+   - ./gradlew test
+
+cache:
+  directories:
+    - $HOME/.gradle
+    - $HOME/.m2
+
+sudo:
+false
